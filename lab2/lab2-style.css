@@ -1,0 +1,153 @@
+body{font-family: Arial, Helvetica, sans-serif;}
+
+.item1 { grid-area: header; background-color: #000000;} /*กำหนดพื้นที่ + สีพื้นหลัง*/
+.item2 { grid-area: menu; background-color: #d3d1d1;}
+.item3 { grid-area: right; background-color: #ffffff;}
+.item4 { grid-area: footer; background-color: #ffffff;}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;  /* 2column column แรกปกติ อันที่ 2 มีขนาดเป็น 4 เท่าของอันแรก*/
+  grid-template-areas: /* กำหนดการวาง */
+    'header header'
+    'menu right'
+    'menu footer';
+  grid-gap: 0px; /*ช่องว่างระหว่าง row-lolumn*/
+}
+
+.menu {
+  list-style-type: none; /* ใช้กำหนดลักษณะที่ใช้นำหน้าแต่ละรายการย่อย */
+  margin: 0px; /* Margin จะใช้แบ่งแยกช่องว่างระหว่าง element ของเราจาก “ข้างนอก” */
+  padding: 20px; /* Padding จะใช้แบ่งแยกช่องว่างระหว่าง element ของเราจาก “ข้างใน” */
+  overflow: hidden; /* ซ่อนส่วนที่เกินเนื้อหา ที่เหลือจะไม่ให้ปรากฎให้เห็น เหมือนกับการตัดออกไปเลย จะแสดงเท่ากับพื้นที่กำหนดไว้เท่านั้น  */
+}
+
+.dropbtn {
+  display: inline-block;  /* เรียงกันแนวนอนและมีพื้นที่ด้านใน ตามที่เรากำหนด */
+  color: #ffffff; /*สีอักษร*/
+  text-align: center; /*จัดตรงกลาง*/
+  padding: 10px 20px; /* “ข้างใน” margin-top-bottom:10px; margin-left-right:20px; */
+  text-decoration: none; /* ไม่เส้นใต้ข้อความ*/
+  font-size : 18px; /*ขนาดข้อความ*/
+  
+}
+
+.dropdown a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+  font-size : 18px;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;  /*ไม่แสดง*/
+  position: absolute; /*ลอยอิสระ ไม่กำหนดพื้นที่*/
+  background-color: #cccccc; /*สีพื้นหลัง*/
+  min-width: 160px; /* แสดงความกว้างต่ำสุด */
+}
+
+.dropdown-content a {
+  display: block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: left;
+  font-size : 15px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav {
+  padding-top: 50px;
+  list-style-type: none; 
+}
+
+.nav  li a{
+  display: block;
+  color: #000000;
+  padding: 12px 10px;
+  text-decoration: none;
+  font-size : 18px;
+}
+
+.nav  li a:hover {
+  background-color: #4F4F4F; 
+  color: #FFFAFA;
+  font-size : 20px;
+}
+
+.content {
+  text-align : justify;  /* จัดให้ทั้งซ้ายและขวา ตรงข้ามกันหมด โดยเพิ่มช่องว่างระหว่างคำเพื่อให้ทั้งสองด้านตรงกันหมด */
+  width: 90%;  /* ความกว้าง */
+  margin: 30px;
+  }
+
+  .content h2{
+    text-align: center;
+  }
+
+  .content img{
+    display: block;
+    margin-left: auto;  /*จัดภาพกึ่งกลาง*/
+    margin-right: auto;
+    width: 350px; 
+  }
+  
+  .tooltip {
+      color : blue; /*สีอักษร*/
+      border-bottom: 1px solid blue; /*ขีดเส้นใต้ ความหนา ลักษณะเส้น สีเส้น*/
+  }
+  
+  .tooltip .tooltip-links {    
+      visibility: hidden; /* element จะถูกซ่อน */
+      position: absolute; /*ลอย*/
+      width: 350px; /*ความกว้าง */
+      text-align: lift; /*จัดอักษรชิดซ้าย*/
+      background-color: black; 
+      color: white;
+      border-radius: 10px; /*ความโค้ง*/
+      padding: 7px ; /* ระยะห่างด้านใน */
+      z-index: 1; /*กำหนก layout เลขมากอยู่หน้าสุด*/
+  }
+  
+  .tooltip:hover .tooltip-links {
+      visibility: visible; /* เมื่อเมาส์ลากผ่านให้แสดง */
+  }
+
+.item4{
+  display: flex; 
+  justify-content: center;  /*การจัด content ทั้งหมดให้อยู่ตรงกลาง */
+}
+
+.pagination li {
+  display: inline-block; 
+}
+
+.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 15px;
+    margin-bottom: 2px;
+    border-radius: 10px; /* เส้นโค้ง */ 
+    text-decoration: none;
+    border: 1px solid #ddd;
+    font-size: 18px;
+}
+
+.pagination li a:hover{
+    background-color: #DCDCDC;    
+    font-size: 22px;
+}
+
+/*.pagination li a.active {
+    background-color: red;
+    color: white;
+}*/

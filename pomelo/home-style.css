@@ -1,0 +1,302 @@
+body{font-family: 'Prompt', sans-serif;} 
+
+/*#header { grid-area: header; }
+#menu { grid-area: menu; }
+#dis { grid-area: dis; }
+#content { grid-area: content; }
+#seller { grid-area: seller; }
+#girl { grid-area: girl; }
+#banner-footer { grid-area: banner-footer; }
+#text-footer { grid-area: footer }
+#contact { grid-area: button; }
+
+#container{
+  display: grid;
+  grid-template: ;
+
+
+}*/
+
+.header {
+    background-color: #fcdf90;
+    text-align: center;
+    padding: 16px;
+    width: 100%;
+    font-size : 15px;
+}
+
+  .head{
+    background-color: #fcfcfc;
+    text-align: center;
+    font-size : 11px;
+    border-radius: 5px;
+    padding: 3px;
+  }
+
+  .item img{
+    width: 80%;
+    min-width: 50%;
+  }
+
+.link {
+  display: flex;
+  background-color: white;
+  margin: 10px -20px;
+}
+
+.item p{
+  text-align: center;
+  font-size: 18px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  z-index: 10;
+  }
+
+  .textshop a{
+    color: black;
+    text-decoration: none;
+    }
+    
+    .textshop a:hover{
+    text-decoration: underline;
+    }
+    
+  
+  .textshop{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding-bottom: 15px;
+  width: 90%;
+  }
+  
+  .textshop p{
+  text-align: left;
+  font-size: 16px;
+  }
+  
+  .shop-footer{
+  background-color: 	 #d9d9fa;
+  text-align: center;
+  padding: 5px;
+  font-size: 14px;
+  }
+
+  .shop-footer a{
+    font-size: 12px;
+    color: blue;
+  }
+  
+  .show {
+  display: grid;
+  width: 100%;
+  }
+
+  
+
+#menu{  
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.menu-content{
+  display: flex;
+  justify-content: flex-start;
+  margin: auto;
+  width: 90%;
+}
+
+#menu1{
+  margin-left: 0px;
+}
+
+/*กล่องมีขนาดใหญ่เป็น 10 เท่า*/
+  .menu-content .menu6  {
+    flex-grow: 10;
+    font-size : 24px;
+    }
+
+  .menu4{    color: #f048b8;    }
+
+  .menu9 img {
+    border-radius: 50%;
+    padding:0px 10px;
+    }
+
+  .menu-content > div{ 
+    text-align: center;
+    font-size : 16px;
+    margin: 20px 20px 0px;
+  }
+
+
+
+
+
+  .content {
+    width: 90%;
+    margin: auto;
+    padding-top: 60px;
+  }
+
+  #dis {    
+    display: flex;  
+    padding: 5px;
+    margin: 0px -20px;
+  }
+
+  /*จัดกล่องชิดขวา*/
+  #dis .dis5 {
+    margin-left:  auto;
+    padding: 10px;
+  }
+  
+  #dis img{
+    width: auto;
+    height: 25px;
+  }
+
+  #dis span{
+    font-size: 14px;
+    margin: 0px 10px 0px;
+  }
+
+  #dis p{
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 15px;
+    font-size: 13px;
+    text-align: left;
+  }
+
+  #dis span:hover + p {    display: grid;  }
+
+#banner{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px 30px;  /*ความกว้างของระหว่างกล่อง*/
+  padding: 20px 0px;
+  margin: 0px -20px;
+}
+
+  .mySlides{  width: 100%;  }
+
+
+  #banner > div {  padding: 20px;}
+
+.banner1 {
+  grid-row: 1;  /*แถวที่ 1*/
+  grid-column:1/3;  /*รวม 2 คอลัม*/
+}
+
+.banner2{
+  text-align: center;
+  font-size: 20px;
+  height: 10em;
+  position: relative;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+}
+
+.banner8 {
+  grid-row: 5; 
+  grid-column:1/3;  
+}
+
+้h2{  text-align: center;}
+
+#bestsellers{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;  
+  grid-gap: 40px 20px;
+  padding: 30px;
+  margin: 0px -30px;
+}
+
+.bestsellers > div{
+  text-align: left;
+  font-size: 14px;
+}
+
+p{
+  text-align: center;
+  font-size: 30px;
+}
+
+#girl{  
+  display: flex;
+  justify-content: space-between;
+  margin: 0px -8px;
+}
+
+#girl  div{
+  margin: 8px ;
+  padding: 20px 0px;
+}
+
+#girl p, a{
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+#banner-footer{ 
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr 1fr;  
+  background-color: black;
+  color: white;
+}
+
+#banner-footer  > div{
+  text-align: center;
+  border-left: 2px solid white;
+  padding: 30px;
+}
+
+#banner-footer img{
+  width: auto;
+  height: 30px;
+}
+
+#text-footer{
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  width: 90%;
+  margin: auto;
+}
+
+
+#text-footer  > div{
+  text-align: left;
+  padding: 50px;
+  line-height: 20pt;
+  font-size: 15px;
+}
+
+#contact {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  margin: auto;
+}
+
+#contact p{  font-size: 13px;}
+
+#contact .left{  margin-right:  auto;}
+
+#contact img{
+  width: auto;
+  height: 30px;
+  padding: 0px;
+  margin: 5px;
+}

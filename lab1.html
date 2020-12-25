@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab1</title>
+    <style> 
+table,th,td{ border: 1px solid black; } 
+table{ border-collapse: collapse;width: 100%;}
+th {height: 30px;text-align: center;background-color:LightBlue;}
+td {padding: 3px 13px;}
+    </style>
+
+</head>
+<body>
+<h1>Lab.HTML </h1>
+<h2>Attribute</h2>
+    <table >
+      <thead>
+        <tr>
+          <th> ชื่อ Tag </th>
+          <th> Attribute </th>
+          <th> การใช้งาน </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> &lt;hr&gt; </td>
+          <td> width, align, size, noshade, color </td>
+          <td> 	เส้นคั่นแนวนอน </td>
+        </tr>
+        <tr>
+            <td> &lt;p&gt; </td>
+            <td>  align </td>
+            <td> ใช้สำหรับจัดแบ่งย่อหน้า </td>
+          </tr>
+          <tr>
+            <td> &lt;div&gt; </td>
+            <td> class, id </td>
+            <td> 	สำหรับแบ่งส่วนต่างๆ ภายใน document </td>
+          </tr>
+          <tr>
+            <td> &lt;img&gt; </td>
+            <td> alt, crossorigin, height, ismap, loading, longdesc, referrerpolicy, sizes, src, srcset, usemap, width </td>
+            <td> แสดงรูปภาพกราฟิก </td>
+          </tr>
+          <tr>
+            <td> &lt;a&gt; </td>
+            <td> download, href, hreflang, media, ping, referrerpolicy, rel, target, type </td>
+            <td> กำหนดจุดลิงก์ </td>
+          </tr>
+          <tr>
+            <td> &lt;ul&gt; </td>
+            <td> type  </td>
+            <td> แสดงรายการข้อมูลแบบแจกแจงเป็นข้อๆ โดยไม่เรียงลำดับ </td>
+          </tr>
+          <tr>
+            <td> &lt;ol&gt; </td>
+            <td> type, start, reversed </td>
+            <td> แสดงรายการข้อมูลแบบแจกแจงเป็นข้อๆ โดยเรียงลำดับ </td>
+          </tr>
+          <tr>
+            <td> &lt;table&gt; </td>
+            <td> align, border, bordercolor, bgcolor, width, valign, cellspacing, cellpadding, colspan, rowspan </td>
+            <td> สร้างตาราง </td>
+          </tr>
+          <tr>
+            <td> &lt;form&gt; </td>
+            <td> accept-charset, action, autocomplete, enctype, method, name, novalidate, rel, target </td>
+            <td> สร้างแบบฟอร์มป้อนข้อมูล </td>
+          </tr>
+          <tr>
+            <td> &lt;button&gt; </td>
+            <td> autofocus, disabled, form, formaction, formenctype, formmethod, formnovalidate, formtarget, name, type, value </td>
+            <td> สร้างปุ่มกดในแบบฟอร์ม </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Differentiation Tag</h2>
+      <table>
+        <thead>
+        <tr>
+          <th> ชื่อ Tag </th>
+          <th> ความเหมือน </th>
+          <th> ความแตกต่าง </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> &lt;hr&gt; & &lt;br&gt; </td>
+          <td> ขึ้นบรรทัดใหม่ </td>
+          <td> &lt;hr&gt; คือ เส้นคั่นแนวนอน <br> &lt;br&gt; เป็นคำสั่งที่กำหนดจุดสิ้นสุดของบรรทัด ขึ้นบรรทัดใหม่ </td>
+        </tr>
+        <tr>
+            <td> &lt;ul&gt; & &lt;ol&gt; </ol> </td>
+            <td> ลิสต์ (List) </td>
+            <td> &lt;ul&gt; เรียงลำดับเป็นสัญลักษณ์ <br> &lt;ol&gt; เรียงลำดับเป็นตัวเลข </td>
+          </tr>
+          <tr>
+            <td> &lt;select&gt; & &lt;checkbox&gt; & &lt;radio button&gt; </td>
+            <td> เลือกตอบคำตอบที่มีไว้อยู่แล้ว </td>
+            <td> &lt;select&gt; เลือกตอบแบบ drop-down list <br> &lt;checkbox&gt; ผู้ใช้งานสามารถเลือกตัวเลือกได้มากกว่าหนึ่งตัวเลือกจากตัวเลือกทั้งหมด <br> &lt;radio button&gt; ผู้ใช้งานสามารถได้เพียงตัวเลือกเดียวจากชุดของตัวเลือกทั้งหมด </td>
+          </tr>
+          <tr>
+            <td> &lt;div&gt; & &lt;span&gt; </td>
+            <td> การจัดกลุ่มข้อความ </td>
+            <td> &lt;div&gt; เป็น block เมื่อมี div ใหม่มา มันก็จะขึ้นบรรทัดใหม่ <br>  &lt;span&gt; เป็น inline ทำงานบรรทัดเดียว </td>
+          </tr>
+          <tr>
+            <td> &lt;script&gt; & &lt;style&gt; </td>
+            <td> เป็นการใช้ภาษาอื่นใน ร่วมกับ HTML &lt;script&gt; javascript &lt;style&gt; css </td>
+            <td> &lt;script&gt; เพื่อให้เว็บไซต์ของเราดูมีการเคลื่อนไหว สามารถตอบสนองผู้ใช้งานได้มากขึ้น โดยการใส่ Javascript ลงในโค๊ด HTML  <br> &lt;style&gt; เป็นการกำหนดค่าคุณสมบัติและรูปแบบของ tag ในเอกสาร </td>
+          </tr>
+        </tbody>
+      </table>
+
+<h2>Input Type</h2>
+
+          <table  >
+            <thead>
+              <tr>
+                  <th> Input Type </th>
+                  <th> ความแตกต่าง </th>
+              </tr>
+            </thead>
+            <tbody>
+            
+              <tr>
+                  <td> "taxt" </td>
+                  <td>  จะกำหนดการป้อน ข้อความ 1 บรรทัด </td>
+              </tr>
+              <tr>
+                <td> "button" </td>
+                <td> กำหนดปุ่มคลิกได้ </td>
+              </tr>
+              <tr>
+                <td> "checkbox" </td>
+                <td> ผู้ใช้งานสามารถเลือกตัวเลือกได้มากกว่าหนึ่งตัวเลือกจากตัวเลือกทั้งหมด </td>
+              </tr>
+              <tr>
+                <td> "radio" </td>
+                <td> ผู้ใช้งานสามารถได้เพียงตัวเลือกเดียวจากชุดของตัวเลือกทั้งหมด </td>
+              </tr>
+              <tr>
+                <td> "password" </td>
+                <td> กำหนดการป้อนรหัสผ่าน ตัวอักษรในกรอบรหัสผ่านจะแสดงเป็นจุด </td>
+              </tr>
+              <tr>
+                <td> "color" </td>
+                <td> กำหนดตัวเลือกสี </td>
+              </tr>
+              <tr>
+                <td> "date" </td>
+                <td> กำหนดควบคุมวันที่ (ปีเดือนและวัน (ไม่มีเวลา)) </td>
+              </tr>
+              <tr>
+                <td> "datetime" </td>
+                <td> ประเภทการป้อนข้อมูลวันที่และเวลาได้ถูกลบออกจากมาตรฐาน HTML ใช้วันที่และเวลาท้องถิ่นแทน </td>
+              </tr>
+              <tr>
+                <td> "datetime-local" </td>
+                <td> กำหนดวันที่และเวลาการควบคุม (ปีเดือนวันชั่วโมงนาทีวินาทีและเสี้ยววินาที (โซนเวลา) </td>
+              </tr>
+              <tr>
+                <td> "email" </td>
+                <td> กำหนดเขตข้อมูลที่อยู่อีเมล </td>
+              </tr>
+              <tr>
+                <td> "file" </td>
+                <td> กำหนดข้อมูลไฟล์และเลือกปุ่ม "Browse ... " (สำหรับการอัปโหลดไฟล์) </td>
+              </tr>
+              <tr>
+                <td> "hidden" </td>
+                <td> กำหนดช่องใส่ที่ซ่อนอยู่ </td>
+              </tr>
+              <tr>
+                <td> "image" </td>
+                <td> กำหนดภาพเป็นปุ่มส่ง </td>
+              </tr>
+              <tr>
+                <td> "month" </td>
+                <td> กำหนดเดือนและปี Control (ไม่มีโซนเวลา) </td>
+              </tr>
+              <tr>
+                <td> "number" </td>
+                <td> กำหนดช่องสำหรับป้อนตัวเลข </td>
+              </tr>
+              <tr>
+                <td> "range" </td>
+                <td> กำหนดควบคุมสำหรับการป้อนจำนวนที่มีค่าที่แน่นอนไม่ได้เป็นสิ่งที่สำคัญ (เช่นการควบคุมเลื่อน) </td>
+              </tr>
+              <tr>
+                <td> "reset" </td>
+                <td> กำหนดปุ่มรีเซ็ต (รีเซ็ตค่าทุกรูปแบบไปเป็นค่าเริ่มต้น) </td>
+              </tr>
+              <tr>
+                <td> "search" </td>
+                <td> กำหนดฟิลด์ข้อความสำหรับการป้อนสตริงการค้นหา </td>
+              </tr>
+              <tr>
+                <td> "submit" </td>
+                <td> กำหนดปุ่มสำหรับส่งข้อมูลไปยังเซิฟเวอร์ โดยข้อมูลจะส่งไปยังไฟล์ที่กำหนดในแอตทริบิวต์ action </td>
+              </tr>
+              <tr>
+                <td> "time" </td>
+                <td> กำหนดควบคุมสำหรับการป้อนเวลา (ไม่มีโซนเวลา) </td>
+              </tr>
+              <tr>
+                <td> "url" </td>
+                <td> กำหนดฟิลด์สำหรับป้อน URL </td>
+              </tr>
+              <tr>
+                <td> "week" </td>
+                <td> กำหนดสัปดาห์และปี Control (ไม่มีโซนเวลา) </td>
+              </tr>
+            </tbody>
+          </table>
+
+</body>
+</html>
