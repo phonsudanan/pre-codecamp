@@ -1,3 +1,5 @@
+
+//slides
 var myIndex = 0;
 carousel();
 
@@ -11,11 +13,23 @@ function carousel() {
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";
     setTimeout(carousel, 4000); // Change image every 4 seconds
-}
+} 
 
 
-document.getElementById("menu2").onclick = function() {myFunction()};
+//showmenu
+/*document.getElementById("menu1").onclick = function() {myFunction()};
 
 function myFunction() {
-  document.getElementById("myDropdown2").classList.toggle("show");
+  document.getElementById("myDropdown3").classList.toggle("show");
+}*/
+
+
+
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("menu").className = "menu-content";
+    } else {
+        document.getElementById("menu").className = "";
+    }
 }
