@@ -122,6 +122,7 @@ body{font-family: 'Prompt', sans-serif;}
     background-color: rgb(255, 255, 255);
     width: 100%;
     cursor: pointer;
+    padding-left: 50px;
   }
   
   .menu-content{
